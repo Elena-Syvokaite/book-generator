@@ -9,16 +9,20 @@ page_html = urlGet.read()
 # closes the connection
 urlGet.close()
 
-
 page_soup = soup(page_html, "html.parser")
 
-book_container = page_soup.findAll("div", {"class":"book-preview book-preview-grid-item span3 tablet-span6 mobile-span6"})
-print(len(book_container))
+# grabs info from page_soup variable
+bookInfo = page_soup.findAll("div", {"class":"info-wrap"})
+print(len(bookInfo)) # prints 24 
 
-# all_books = page_soup.find(id="all_votes")
+# parsing 
 
-# book_titles = all_books.find_all(class_= "bookTitle").get_text()
-# print(book_titles)
+# parsing info from 1 item
+container = bookInfo[0]
 
-# author_name = all_books.find_all(class_= "authorName")
-# print(author_name)
+bookTitle = container.div.a.get_text() # prints The Plague
+print(bookTitle) 
+
+bookAuthor = container.span.get_text() # prints Albert Camus 
+print(bookAuthor) 
+

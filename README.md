@@ -1,6 +1,6 @@
 # book-generator
 
-a programme that scrapes Waterstones website, showing book title and author in a data frame. Then, randomly selects one title from the list.
+A programme that scrapes Waterstones website, showing book title and author in a data frame. Then, randomly selects one title from the list.
 
 
 Credits:

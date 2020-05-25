@@ -10,4 +10,3 @@ https://www.youtube.com/watch?v=XQgXKtPSzUI&list=PLNZfL2eIDxO3ZouNTyNftM5vNp-9EG
 
 Clever Programmer: "web scraping with python using beautiful soup & requests (Python tutorial for beginners 2019)"
 https://www.youtube.com/watch?v=E5cSNSeBhjw&list=PLNZfL2eIDxO3ZouNTyNftM5vNp-9EGM6B&index=3&t=899s 
-

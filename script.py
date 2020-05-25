@@ -1,6 +1,7 @@
 from urllib.request import urlopen as uReq
 from bs4 import BeautifulSoup as soup
 import pandas as pd
+import random
 
 my_url = 'https://www.waterstones.com/category/fiction/classic-fiction/page/1e'
 # opens connection, grabs the page
@@ -30,4 +31,8 @@ bookStuff = pd.DataFrame(
         'Book_title': bookTitles,
         'Book_author': bookAuthors,
     })
+print(bookStuff)
+
+# prints a random title from data frame
+bookStuff = bookStuff.sample(n=1)
 print(bookStuff)
